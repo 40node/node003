@@ -1,5 +1,5 @@
 {
-  "name": "library management",
+  "name": "library management - node003",
   "description": "Sample: library management system with multi user by node/express",
   "env": {
     "NODE_ENV": {
@@ -7,6 +7,6 @@
       "value": "production"
     }
   },
-  "repository": "https://github.com/40node/library_management",
+  "repository": "https://github.com/40node/node003",
   "addons": [ "heroku-postgresql" ]
 }
