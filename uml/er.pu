@@ -1,0 +1,25 @@
+@startuml database
+package 蔵書データベース <<Database>> {
+  entity libraries {
+    + id
+    --
+    book_title
+    author
+    publisher
+    image_url
+    ..
+    created_at
+    updated_at
+  }
+  entity comments {
+    + id
+    --
+    comment
+    * book_id
+    ..
+    created_at
+    updated_at
+  }
+}
+libraries -ri-|{ comments : 1 .. n
+@enduml

@@ -1,0 +1,24 @@
+@startuml class
+
+class bookProvider {
+    book_title
+    author
+    publisher
+    image_uml
+    +create()
+    +find()
+    +view()
+    +edit()
+    +destroy()
+}
+
+class commentProvider {
+    comment
+    +create()
+    +find()
+    +destroy()
+}
+
+bookProvider "1" o-right- "0..*" commentProvider : コメント
+
+@enduml
